@@ -124,6 +124,21 @@ body {
    width: 350px; 
    border-radius: 10px;
     padding: 0px; 
+
+}
+
+@keyframes project-trans{
+  0% {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(50px);
+  }
+
 }
 
 .project-skill-button-collection{
@@ -348,7 +363,26 @@ width: 12px; margin-right: 5px;
    width: 350px; 
    border-radius: 10px;
     padding: 0px; 
+        animation: project-trans 2s;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
 }
+
+
+@keyframes project-trans{
+  0% {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(50px);
+  }
+
+}
+
 
 .each-project-style:hover{
   transform: scale(1.04);
